@@ -12,7 +12,7 @@ enum_glob_use = "deny"
 pedantic = { level = "deny", priority = -1 }
 nursery = { level = "deny", priority = -2 }
 unwrap_used = { level = "deny", priority = -3 }
+uninlined_format_args = "allow"
 
 [dependencies]
-dashmap = "5.5.3"
 dotenv = "0.15.0"
