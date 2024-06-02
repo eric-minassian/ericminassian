@@ -32,3 +32,16 @@ jobs:
       - name: Deploy PR app to Fly.io
         id: deploy
         uses: superfly/fly-pr-review-apps@1.2.1
+
+      - name: Comment on PR with review app URL
+        uses: actions/github-script@v3
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { data } = await github.repos.createCommitComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              commit_sha: context.sha,
+              body: `Review app deployed to ${process.env.FLY_REGION} at ${process.env.url}`,
+            });
+            console.log(data.html_url);
