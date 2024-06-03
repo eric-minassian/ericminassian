@@ -7,9 +7,10 @@ use std::net::TcpListener;
 use ericminassian::thread_pool::ThreadPool;
 use server::{handle_connection, Method, Response, Route};
 
-const ROUTES: [Route; 2] = [
+const ROUTES: [Route; 3] = [
     (Method::Get, "/", routes::index::index),
     (Method::Get, "/resume", routes::resume::resume),
+    (Method::Get, "/index.css", routes::css::css),
 ];
 
 fn main() {

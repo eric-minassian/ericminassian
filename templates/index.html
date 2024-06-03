@@ -10,56 +10,192 @@
     />
     <meta name="author" content="Eric Minassian" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/index.css" />
   </head>
-  <body>
-    <main>
-      <nav>
-        <a href="/">home</a>
-        <a href="/resume">resume</a>
-      </nav>
-      <h1>hey, I'm eric</h1>
-      <p>
-        I'm a Computer Science and Business Administration double major at the
-        <a href="https://uci.edu" target="_blank"
-          >University of California, Irvine</a
-        >. I'm currently interning at
-        <a href="https://amazon.com" target="_blank">Amazon</a>
-        as a Software Development Engineer.
-      </p>
+  <body
+    class="text-black bg-white dark:text-white dark:bg-[#111010] antialiased max-w-2xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto"
+  >
+    <main class="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
+      <aside class="-ml-[8px] mb-16 tracking-tight">
+        <div class="lg:sticky lg:top-20">
+          <nav
+            class="flex flex-row items-start relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
+          >
+            <a
+              class="transition-all hover:text-neutral-800 dark:hover:text-neutral-100 flex align-middle"
+              href="/"
+              ><span class="relative py-1 px-2">home</span></a
+            >
+            <a
+              class="transition-all hover:text-neutral-800 dark:hover:text-neutral-100 flex align-middle text-neutral-400"
+              href="/resume"
+              ><span class="relative py-1 px-2">resume</span></a
+            >
+          </nav>
+        </div>
+      </aside>
+      <section>
+        <h1 class="font-semibold text-2xl mb-8 tracking-tighter">
+          hey, I'm eric 👋
+        </h1>
+        <p class="prose prose-neutral dark:prose-invert">
+          I'm a Computer Science and Business Administration double major at the
+          <a
+            class="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded p-1 text-sm inline-flex items-center leading-4 text-neutral-900 dark:text-neutral-100 no-underline"
+            href="https://uci.edu"
+            target="_blank"
+            ><svg
+              class="!mr-1 w-5 h-5"
+              xmlns="http://www.w3.org/2000/svg"
+              height="108.88"
+              viewBox="0 0 254.2325 108.87875"
+              width="254.23"
+            >
+              <g transform="matrix(1.25 0 0 -1.25 161.55 828.38)">
+                <path
+                  d="m164.3 1.1055c-31.12 0-54.02 23.49-54.02 53.442v0.29c0 30.686 23.63 53.142 52.99 53.142 22.62 0 35.68-9.833 45.37-23.191l-21.43-15.269c-6.17 7.488-12.48 12.48-23.2 12.48-14.39 0-24.52-12.041-24.52-27.453v-0.293c0-14.978 10.13-27.313 24.52-27.313 9.83 0 16.59 4.847 22.46 12.043l21.44-16.589c-9.11-12.48-22.61-21.29-43.61-21.29zm60.35 2.0527v102.77h28.48v-102.77l-28.48-0.0018zm-223.76 0.002v57.697c0 32.153 18.353 46.983 47.419 46.983 29.217 0 48.157-14.683 48.157-47.717v-56.963l-28.778 0.0002v57.844c0 14.389-7.485 21.142-19.084 21.142-11.452 0-18.941-7.045-18.941-21.876v-57.11l-28.773 0.0002z"
+                  transform="matrix(.8 0 0 -.8 -129.24 662.7)"
+                  fill="#0064a4"
+                />
+              </g>
+            </svg>
+            University of California, Irvine</a
+          >. I'm currently interning at
+          <a
+            class="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded p-1 text-sm inline-flex items-center leading-4 text-neutral-900 dark:text-neutral-100 no-underline"
+            href="https://amazon.com"
+            target="_blank"
+          >
+            <svg
+              class="!mr-1 w-5 h-5"
+              height="2500"
+              viewBox="2.167 .438 251.038 259.969"
+              width="2500"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g fill="none" fill-rule="evenodd">
+                <path
+                  d="m221.503 210.324c-105.235 50.083-170.545 8.18-212.352-17.271-2.587-1.604-6.984.375-3.169 4.757 13.928 16.888 59.573 57.593 119.153 57.593 59.621 0 95.09-32.532 99.527-38.207 4.407-5.627 1.294-8.731-3.16-6.872zm29.555-16.322c-2.826-3.68-17.184-4.366-26.22-3.256-9.05 1.078-22.634 6.609-21.453 9.93.606 1.244 1.843.686 8.06.127 6.234-.622 23.698-2.826 27.337 1.931 3.656 4.79-5.57 27.608-7.255 31.288-1.628 3.68.622 4.629 3.68 2.178 3.016-2.45 8.476-8.795 12.14-17.774 3.639-9.028 5.858-21.622 3.71-24.424z"
+                  fill="#f90"
+                  fill-rule="nonzero"
+                />
+                <path
+                  d="m150.744 108.13c0 13.141.332 24.1-6.31 35.77-5.361 9.489-13.853 15.324-23.341 15.324-12.952 0-20.495-9.868-20.495-24.432 0-28.75 25.76-33.968 50.146-33.968zm34.015 82.216c-2.23 1.992-5.456 2.135-7.97.806-11.196-9.298-13.189-13.615-19.356-22.487-18.502 18.882-31.596 24.527-55.601 24.527-28.37 0-50.478-17.506-50.478-52.565 0-27.373 14.85-46.018 35.96-55.126 18.313-8.066 43.884-9.489 63.43-11.718v-4.365c0-8.018.616-17.506-4.08-24.432-4.128-6.215-12.003-8.777-18.93-8.777-12.856 0-24.337 6.594-27.136 20.257-.57 3.037-2.799 6.026-5.835 6.168l-32.735-3.51c-2.751-.618-5.787-2.847-5.028-7.07 7.543-39.66 43.36-51.616 75.43-51.616 16.415 0 37.858 4.365 50.81 16.795 16.415 15.323 14.849 35.77 14.849 58.02v52.565c0 15.798 6.547 22.724 12.714 31.264 2.182 3.036 2.657 6.69-.095 8.966-6.879 5.74-19.119 16.415-25.855 22.393l-.095-.095"
+                  fill="#000"
+                />
+                <path
+                  d="m221.503 210.324c-105.235 50.083-170.545 8.18-212.352-17.271-2.587-1.604-6.984.375-3.169 4.757 13.928 16.888 59.573 57.593 119.153 57.593 59.621 0 95.09-32.532 99.527-38.207 4.407-5.627 1.294-8.731-3.16-6.872zm29.555-16.322c-2.826-3.68-17.184-4.366-26.22-3.256-9.05 1.078-22.634 6.609-21.453 9.93.606 1.244 1.843.686 8.06.127 6.234-.622 23.698-2.826 27.337 1.931 3.656 4.79-5.57 27.608-7.255 31.288-1.628 3.68.622 4.629 3.68 2.178 3.016-2.45 8.476-8.795 12.14-17.774 3.639-9.028 5.858-21.622 3.71-24.424z"
+                  fill="#f90"
+                  fill-rule="nonzero"
+                />
+                <path
+                  d="m150.744 108.13c0 13.141.332 24.1-6.31 35.77-5.361 9.489-13.853 15.324-23.341 15.324-12.952 0-20.495-9.868-20.495-24.432 0-28.75 25.76-33.968 50.146-33.968zm34.015 82.216c-2.23 1.992-5.456 2.135-7.97.806-11.196-9.298-13.189-13.615-19.356-22.487-18.502 18.882-31.596 24.527-55.601 24.527-28.37 0-50.478-17.506-50.478-52.565 0-27.373 14.85-46.018 35.96-55.126 18.313-8.066 43.884-9.489 63.43-11.718v-4.365c0-8.018.616-17.506-4.08-24.432-4.128-6.215-12.003-8.777-18.93-8.777-12.856 0-24.337 6.594-27.136 20.257-.57 3.037-2.799 6.026-5.835 6.168l-32.735-3.51c-2.751-.618-5.787-2.847-5.028-7.07 7.543-39.66 43.36-51.616 75.43-51.616 16.415 0 37.858 4.365 50.81 16.795 16.415 15.323 14.849 35.77 14.849 58.02v52.565c0 15.798 6.547 22.724 12.714 31.264 2.182 3.036 2.657 6.69-.095 8.966-6.879 5.74-19.119 16.415-25.855 22.393l-.095-.095"
+                  fill="#000"
+                />
+              </g>
+            </svg>
+            Amazon</a
+          >
+          as a Software Development Engineer.
+        </p>
 
-      <div>
-        <ul>
-          <li>
-            <a
-              href="https://linkedin.com/in/minassian-eric"
-              rel="noopener noreferrer"
-              target="_blank"
-              >linkedin</a
-            >
-          </li>
-          <li>
-            <a href="/resume" rel="noopener noreferrer" target="_blank"
-              >resume</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://github.com/eric-minassian"
-              rel="noopener noreferrer"
-              target="_blank"
-              >github</a
-            >
-          </li>
-          <li>
-            <a
-              href="mailto:eric@ericminassian.com"
-              rel="noopener noreferrer"
-              target="_blank"
-              >email</a
-            >
-          </li>
-        </ul>
-      </div>
+        <div
+          class="my-8 flex flex-col sm:flex-row space-x-0 sm:space-x-4 space-y-4 sm:space-y-0 w-full"
+        >
+          <ul
+            class="flex flex-col md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm text-neutral-600 dark:text-neutral-300"
+          >
+            <li>
+              <a
+                class="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
+                href="https://linkedin.com/in/minassian-eric"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.07102 11.3494L0.963068 10.2415L9.2017 1.98864H2.83807L2.85227 0.454545H11.8438V9.46023H10.2955L10.3097 3.09659L2.07102 11.3494Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+                <p class="h-7 ml-2">linkedin</p></a
+              >
+            </li>
+            <li>
+              <a
+                class="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
+                href="/resume"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.07102 11.3494L0.963068 10.2415L9.2017 1.98864H2.83807L2.85227 0.454545H11.8438V9.46023H10.2955L10.3097 3.09659L2.07102 11.3494Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+                <p class="h-7 ml-2">resume</p></a
+              >
+            </li>
+            <li>
+              <a
+                class="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
+                href="https://github.com/eric-minassian"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.07102 11.3494L0.963068 10.2415L9.2017 1.98864H2.83807L2.85227 0.454545H11.8438V9.46023H10.2955L10.3097 3.09659L2.07102 11.3494Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+                <p class="h-7 ml-2">github</p></a
+              >
+            </li>
+            <li>
+              <a
+                class="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
+                href="mailto:eric@ericminassian.com"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.07102 11.3494L0.963068 10.2415L9.2017 1.98864H2.83807L2.85227 0.454545H11.8438V9.46023H10.2955L10.3097 3.09659L2.07102 11.3494Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+                <p class="h-7 ml-2">email</p></a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
   </body>
 </html>
