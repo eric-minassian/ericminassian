@@ -1,5 +1,6 @@
 use crate::Response;
 
+pub mod css;
 pub mod index;
 pub mod resume;
 
