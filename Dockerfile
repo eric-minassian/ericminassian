@@ -7,6 +7,7 @@ WORKDIR /app
 RUN --mount=type=bind,source=src,target=src \
     --mount=type=bind,source=assets,target=assets \
     --mount=type=bind,source=templates,target=templates \
+    --mount=type=bind,source=build.rs,target=build.rs \
     --mount=type=bind,source=Cargo.toml,target=Cargo.toml \
     --mount=type=bind,source=Cargo.lock,target=Cargo.lock \
     --mount=type=cache,target=/app/target \
